@@ -1,0 +1,19 @@
+/* Card and layout tweaks */
+.card { border-radius: 0.75rem; }
+.shadow-sm { box-shadow: 0 6px 18px rgba(28, 36, 50, 0.06); }
+
+/* Weather visual */
+.weather-icon { width: 96px; height: 96px; object-fit: contain; }
+.stat-label { color: #6b7280; font-size: 0.85rem; }
+.stat-value { font-weight: 600; font-size: 1.05rem; }
+
+/* Favorites list */
+.fav-item { transition: background .15s, transform .08s; cursor: default; }
+.fav-item:hover { background: rgba(13,110,253,0.03); transform: translateY(-2px); }
+.fav-label { cursor: pointer; user-select: none; }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .weather-icon { width: 72px; height: 72px; }
+  .stat-value { font-size: 0.95rem; }
+}
